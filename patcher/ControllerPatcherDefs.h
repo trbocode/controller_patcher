@@ -398,6 +398,9 @@ enum UController_Type{
 #define HID_DS4_VID                           0x054c
 #define HID_DS4_PID                           0x05c4
 
+#define HID_NV_VID                            0x0955
+#define HID_NV_PID                            0x7214
+
 #define HID_NEW_DS4_VID                       0x054c
 #define HID_NEW_DS4_PID                       0x09CC
 
@@ -494,6 +497,39 @@ enum UController_Type{
 #define HID_DS4_BUTTON_T_PAD_CLICK_VALUE      0x02 // 7
 
 #define HID_DS4_PAD_COUNT                     1
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * Nvidia
+ *---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#define HID_NV_BUTTON_A_VALUE                0x01 // 5
+#define HID_NV_BUTTON_B_VALUE                0x02 // 5
+#define HID_NV_BUTTON_X_VALUE                0x04 // 5
+#define HID_NV_BUTTON_Y_VALUE                0x08 // 5
+#define HID_NV_BUTTON_L1_VALUE               0x10 // 6
+#define HID_NV_BUTTON_L2_VALUE               0x10 // 6
+#define HID_NV_BUTTON_L3_VALUE               0x40 // 6
+#define HID_NV_BUTTON_R1_VALUE               0x20 // 6
+#define HID_NV_BUTTON_R2_VALUE               0x10 // 6
+#define HID_NV_BUTTON_R3_VALUE               0x80 // 6
+#define HID_NV_BUTTON_FRONT_VALUE            0x01 // 6
+#define HID_NV_BUTTON_BACK_VALUE             0x02 // 6
+
+#define HID_NV_BUTTON_DPAD_MASK_VALUE        0xFF
+
+#define HID_NV_BUTTON_DPAD_N_VALUE           0x00 // 5
+#define HID_NV_BUTTON_DPAD_NE_VALUE          0x01 // 5
+#define HID_NV_BUTTON_DPAD_E_VALUE           0x02 // 5
+#define HID_NV_BUTTON_DPAD_SE_VALUE          0x03 // 5
+#define HID_NV_BUTTON_DPAD_S_VALUE           0x04 // 5
+#define HID_NV_BUTTON_DPAD_SW_VALUE          0x05 // 5
+#define HID_NV_BUTTON_DPAD_W_VALUE           0x06 // 5
+#define HID_NV_BUTTON_DPAD_NW_VALUE          0x07 // 5
+#define HID_NV_BUTTON_DPAD_NEUTRAL_VALUE     0x80 // 5
+
+#define HID_NV_BUTTON_GUIDE_VALUE            0x04 // 7
+
+#define HID_NV_PAD_COUNT                     1
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  * XInput

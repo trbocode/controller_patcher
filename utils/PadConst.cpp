@@ -32,6 +32,7 @@ const char *HID_MOUSE_STRING      = "Mouse";
 const char *HID_DS3_STRING        = "DualShock 3\nController";
 const char *HID_DS4_STRING        = "DualShock 4\nController";
 const char *HID_NEW_DS4_STRING    = "DualShock 4\nController";
+const char *HID_NV_STRING    = "Nvidia Shield\nController";
 const char *HID_XINPUT_STRING     = "XInput\nController";
 const char *HID_SWITCH_PRO_STRING = "Switch\nPro Controller";
 
@@ -214,6 +215,71 @@ const u8 HID_DS4_STICK_R_Y[STICK_CONF_ENUM_MAXVALUE] =  {   STICK_CONF_MAGIC_VAL
                                                             0x00, //STICK_CONF_MIN,
                                                             0xFF};//STICK_CONF_MAX,
 
+//!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//! New NVIDIA
+//!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const u8 HID_NV_BUTTON_A[]     = { 0x03,HID_NV_BUTTON_A_VALUE};
+const u8 HID_NV_BUTTON_B[]    = { 0x03,HID_NV_BUTTON_B_VALUE};
+const u8 HID_NV_BUTTON_X[]   = { 0x03,HID_NV_BUTTON_X_VALUE};
+const u8 HID_NV_BUTTON_Y[]  = { 0x03,HID_NV_BUTTON_Y_VALUE};
+
+const u8 HID_NV_BUTTON_L1[]        = { 0x03,HID_NV_BUTTON_L1_VALUE};
+const u8 HID_NV_BUTTON_L2[]        = { 0x06,HID_NV_BUTTON_L2_VALUE};
+const u8 HID_NV_BUTTON_L3[]        = { 0x03,HID_NV_BUTTON_L3_VALUE};
+
+const u8 HID_NV_BUTTON_R1[]        = { 0x03,HID_NV_BUTTON_R1_VALUE};
+const u8 HID_NV_BUTTON_R2[]        = { 0x08,HID_NV_BUTTON_R2_VALUE};
+const u8 HID_NV_BUTTON_R3[]        = { 0x03,HID_NV_BUTTON_R3_VALUE};
+
+const u8 HID_NV_BUTTON_FRONT[]     = { 0x11,HID_NV_BUTTON_FRONT_VALUE};
+const u8 HID_NV_BUTTON_BACK[]   = { 0x11,HID_NV_BUTTON_BACK_VALUE};
+
+
+const u8 HID_NV_BUTTON_DPAD_TYPE[]     = { CONTRPDM_Hat,HID_NV_BUTTON_DPAD_MASK_VALUE};
+const u8 HID_NV_BUTTON_DPAD_N[]        = { 0x02,HID_NV_BUTTON_DPAD_N_VALUE};
+const u8 HID_NV_BUTTON_DPAD_NE[]       = { 0x02,HID_NV_BUTTON_DPAD_NE_VALUE};
+const u8 HID_NV_BUTTON_DPAD_E[]        = { 0x02,HID_NV_BUTTON_DPAD_E_VALUE};
+const u8 HID_NV_BUTTON_DPAD_SE[]       = { 0x02,HID_NV_BUTTON_DPAD_SE_VALUE};
+const u8 HID_NV_BUTTON_DPAD_S[]        = { 0x02,HID_NV_BUTTON_DPAD_S_VALUE};
+const u8 HID_NV_BUTTON_DPAD_SW[]       = { 0x02,HID_NV_BUTTON_DPAD_SW_VALUE};
+const u8 HID_NV_BUTTON_DPAD_W[]        = { 0x02,HID_NV_BUTTON_DPAD_W_VALUE};
+const u8 HID_NV_BUTTON_DPAD_NW[]       = { 0x02,HID_NV_BUTTON_DPAD_NW_VALUE};
+const u8 HID_NV_BUTTON_DPAD_NEUTRAL[]  = { 0x02,HID_NV_BUTTON_DPAD_NEUTRAL_VALUE};
+
+const u8 HID_NV_BUTTON_GUIDE[]          = { 0x11,HID_NV_BUTTON_GUIDE_VALUE};
+
+const u8 HID_NV_STICK_L_X[STICK_CONF_ENUM_MAXVALUE] =  {   STICK_CONF_MAGIC_VALUE, //STICK_CONF_MAGIC_VERSION
+                                                            0x0A, //STICK_CONF_BYTE,
+                                                            0x80, //STICK_CONF_DEFAULT,
+                                                            0x06, //STICK_CONF_DEADZONE,
+                                                            0x00, //STICK_CONF_INVERT,
+                                                            0x00, //STICK_CONF_MIN,
+                                                            0xFF};//STICK_CONF_MAX,
+
+const u8 HID_NV_STICK_L_Y[STICK_CONF_ENUM_MAXVALUE] =  {   STICK_CONF_MAGIC_VALUE, //STICK_CONF_MAGIC_VERSION
+                                                            0x0C, //STICK_CONF_BYTE,
+                                                            0x80, //STICK_CONF_DEFAULT,
+                                                            0x05, //STICK_CONF_DEADZONE,
+                                                            0x01, //STICK_CONF_INVERT,
+                                                            0x00, //STICK_CONF_MIN,
+                                                            0xFF};//STICK_CONF_MAX,
+
+const u8 HID_NV_STICK_R_X[STICK_CONF_ENUM_MAXVALUE] =  {   STICK_CONF_MAGIC_VALUE, //STICK_CONF_MAGIC_VERSION
+                                                            0x0E, //STICK_CONF_BYTE,
+                                                            0x80, //STICK_CONF_DEFAULT,
+                                                            0x07, //STICK_CONF_DEADZONE,
+                                                            0x00, //STICK_CONF_INVERT,
+                                                            0x00, //STICK_CONF_MIN,
+                                                            0xFF};//STICK_CONF_MAX,
+
+const u8 HID_NV_STICK_R_Y[STICK_CONF_ENUM_MAXVALUE] =  {   STICK_CONF_MAGIC_VALUE, //STICK_CONF_MAGIC_VERSION
+                                                            0x10, //STICK_CONF_BYTE,
+                                                            0x80, //STICK_CONF_DEFAULT,
+                                                            0x09, //STICK_CONF_DEADZONE,
+                                                            0x01, //STICK_CONF_INVERT,
+                                                            0x00, //STICK_CONF_MIN,
+                                                            0xFF};//STICK_CONF_MAX,
 //!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //! XInput
 //!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

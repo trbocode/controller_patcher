@@ -160,6 +160,7 @@ private:
     std::map<std::string,const u8*> presetGCValues;
     std::map<std::string,const u8*> presetDS3Values;
     std::map<std::string,const u8*> presetDS4Values;
+    std::map<std::string,const u8*> presetNVValues;
     std::map<std::string,const u8*> presetXInputValues;
     std::map<std::string,const u8*> presetSwitchProValues;
     std::map<std::string,const u8*> presetSticks;
@@ -337,6 +338,34 @@ private:
         presetDS4Values["DS4_BUTTON_GUIDE"] =                           HID_DS4_BUTTON_GUIDE;
         presetDS4Values["DS4_BUTTON_T_PAD_CLICK"] =                     HID_DS4_BUTTON_T_PAD_CLICK;
 
+        presetNVValues["NV_BUTTON_A"] =                                HID_NV_BUTTON_A;
+        presetNVValues["NV_BUTTON_B"] =                             HID_NV_BUTTON_B;
+        presetNVValues["NV_BUTTON_X"] =                               HID_NV_BUTTON_X;
+        presetNVValues["NV_BUTTON_Y"] =                             HID_NV_BUTTON_Y;
+
+        presetNVValues["NV_BUTTON_L1"] =                              HID_NV_BUTTON_L1;
+        presetNVValues["NV_BUTTON_L2"] =                              HID_NV_BUTTON_L2;
+        presetNVValues["NV_BUTTON_L3"] =                              HID_NV_BUTTON_L3;
+        presetNVValues["NV_BUTTON_R1"] =                              HID_NV_BUTTON_R1;
+        presetNVValues["NV_BUTTON_R2"] =                              HID_NV_BUTTON_R2;
+        presetNVValues["NV_BUTTON_R3"] =                              HID_NV_BUTTON_R3;
+
+        presetNVValues["NV_BUTTON_FRONT"] =                           HID_NV_BUTTON_FRONT;
+        presetNVValues["NV_BUTTON_BACK"] =                            HID_NV_BUTTON_BACK;
+        presetNVValues["NV_BUTTON_DPAD_TYPE"] =                       HID_NV_BUTTON_DPAD_TYPE;
+
+        presetNVValues["NV_BUTTON_DPAD_N"] =                          HID_NV_BUTTON_DPAD_N;
+        presetNVValues["NV_BUTTON_DPAD_NE"] =                         HID_NV_BUTTON_DPAD_NE;
+        presetNVValues["NV_BUTTON_DPAD_E"] =                          HID_NV_BUTTON_DPAD_E;
+        presetNVValues["NV_BUTTON_DPAD_SE"] =                         HID_NV_BUTTON_DPAD_SE;
+        presetNVValues["NV_BUTTON_DPAD_S"] =                          HID_NV_BUTTON_DPAD_S;
+        presetNVValues["NV_BUTTON_DPAD_SW"] =                         HID_NV_BUTTON_DPAD_SW;
+        presetNVValues["NV_BUTTON_DPAD_W"] =                          HID_NV_BUTTON_DPAD_W;
+        presetNVValues["NV_BUTTON_DPAD_NW"] =                         HID_NV_BUTTON_DPAD_NW;
+        presetNVValues["NV_BUTTON_DPAD_NEUTRAL"] =                    HID_NV_BUTTON_DPAD_NEUTRAL;
+
+        presetNVValues["NV_BUTTON_GUIDE"] =                           HID_NV_BUTTON_GUIDE;
+
         presetXInputValues["XINPUT_BUTTON_A"] =                         HID_XINPUT_BUTTON_A;
         presetXInputValues["XINPUT_BUTTON_B"] =                         HID_XINPUT_BUTTON_B;
         presetXInputValues["XINPUT_BUTTON_X"] =                         HID_XINPUT_BUTTON_X;
@@ -506,6 +535,11 @@ private:
         presetSticks["DS4_STICK_R_X"] =                                 HID_DS4_STICK_R_X;
         presetSticks["DS4_STICK_R_Y"] =                                 HID_DS4_STICK_R_Y;
 
+        presetSticks["NV_STICK_L_X"] =                                 HID_NV_STICK_L_X;
+        presetSticks["NV_STICK_L_Y"] =                                 HID_NV_STICK_L_Y;
+        presetSticks["NV_STICK_R_X"] =                                 HID_NV_STICK_R_X;
+        presetSticks["NV_STICK_R_Y"] =                                 HID_NV_STICK_R_Y;
+
         presetSticks["XINPUT_STICK_L_X"] =                              HID_XINPUT_STICK_L_X;
         presetSticks["XINPUT_STICK_L_Y"] =                              HID_XINPUT_STICK_L_Y;
         presetSticks["XINPUT_STICK_R_X"] =                              HID_XINPUT_STICK_R_X;
@@ -557,6 +591,7 @@ private:
         deviceNames[CPStringTools::strfmt("%04X%04X",HID_DS3_VID,       HID_DS3_PID).c_str()]               = HID_DS3_STRING;
         deviceNames[CPStringTools::strfmt("%04X%04X",HID_NEW_DS4_VID,   HID_NEW_DS4_PID).c_str()]           = HID_NEW_DS4_STRING;
         deviceNames[CPStringTools::strfmt("%04X%04X",HID_DS4_VID,       HID_DS4_PID).c_str()]               = HID_DS4_STRING;
+        deviceNames[CPStringTools::strfmt("%04X%04X",HID_NV_VID,       HID_NV_PID).c_str()]                 = HID_NV_STRING;
         deviceNames[CPStringTools::strfmt("%04X%04X",HID_XINPUT_VID,    HID_XINPUT_PID).c_str()]            = HID_XINPUT_STRING;
         deviceNames[CPStringTools::strfmt("%04X%04X",HID_SWITCH_PRO_VID,HID_SWITCH_PRO_PID).c_str()]        = HID_SWITCH_PRO_STRING;
     }
